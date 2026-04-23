@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Name Page</title>
+
+<script>
+function openPage() {
+    var name = document.getElementById("name").value;
+    window.open("welcome.html?username=" + name);
+}
+
+function resetValue() {
+    document.getElementById("name").value = 100;
+}
+</script>
+
+</head>
+
+<body>
+
+Name:
+<input type="text" id="name" value="Enter your name">
+
+<br><br>
+
+<button onclick="openPage()">Enter</button>
+<button onclick="resetValue()">Reset</button>
+
+</body>
+</html>
